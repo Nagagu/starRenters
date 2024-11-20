@@ -26,6 +26,16 @@ export const getReviewById = async (id) => {
   }
 };
 
+export const getReviewByName = async (tenantName) => {
+  try {
+    const response = await axios.get(`${API_URL}/byTenantName/${tenantName}`);
+    return response.data; // Devuelve la reseña encontrada
+  } catch (error) {
+    console.error("Error al obtener la reseña", error);
+    throw error;
+  }
+};
+
 // Crear una nueva reseña
 export const createReview = async (review) => {
   try {
