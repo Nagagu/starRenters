@@ -69,7 +69,7 @@ export const ReviewsList = ({ reviews, setReviews, loading }) => {
       ) : (
         <List>
           {reviews &&
-            reviews.map((review) => (
+            reviews?.map((review) => (
               <React.Fragment key={review.id}>
                 <ListItem
                   sx={{

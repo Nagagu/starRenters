@@ -80,6 +80,9 @@ export const Dashboard = () => (
           padding: "2rem",
           borderRadius: "15px",
           background: "rgba(255, 255, 255, 0.9)",
+          maxHeight: "84vh",
+          overflow: "auto",
+          overflowX: "hidden",
         }}
       >
         <Typography
@@ -118,7 +121,9 @@ export const Dashboard = () => (
             }}
           >
             <Typography variant="body2">Nombre: Juan Pérez</Typography>
-            <Typography variant="body2">DNI: 12345678A</Typography>
+            <Typography sx={{ p: 1 }} variant="body2">
+              DNI: 12345678A
+            </Typography>
             <Typography variant="body2">
               ID Inquilino: <strong>JP5678</strong>
             </Typography>
@@ -130,7 +135,11 @@ export const Dashboard = () => (
           component="form"
           noValidate
           autoComplete="off"
-          sx={{ display: "flex", gap: "1rem", justifyContent: "center" }}
+          sx={{
+            display: "flex",
+            gap: "1rem",
+            justifyContent: "center",
+          }}
         >
           <TenantManager />
         </Box>
