@@ -1,8 +1,7 @@
-import React, { useState } from "react";
 import { Formik, Form, Field } from "formik";
 import { Button, TextField, Typography } from "@mui/material";
 import * as Yup from "yup";
-import { createReview } from "../../api/Reviews";
+import { createReview } from "../../api/reviews";
 
 const ReviewSchema = Yup.object().shape({
   tenantName: Yup.string().required("El nombre es obligatorio"),

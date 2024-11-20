@@ -1,11 +1,10 @@
-import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import { AppBar, Toolbar, Button, Typography, Box } from "@mui/material";
+import { AppBar, Toolbar, Button, Box } from "@mui/material";
 import { Dashboard } from "./Pages/Dashboard";
 import { Login } from "./Pages/Login";
 
 // Si el logo está en la carpeta 'src/assets'
-import logo from "/img/logowhite.png";
+//import logo from "/img/logowhite.png";
 
 function App() {
   return (

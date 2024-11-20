@@ -1,6 +1,6 @@
 // src/components/ReviewList.js
-import React, { useState, useEffect } from "react";
-import { deleteReview, getReviews } from "../api/Reviews";
+
+import { deleteReview } from "../api/reviews";
 import {
   Typography,
   List,

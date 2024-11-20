@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import { useState } from "react";
 import {
   Box,
   TextField,
@@ -14,8 +14,7 @@ import {
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import AddReviewForm from "./ReviewForm/AddReviewForm";
-import { ReviewsList } from "./ReviewsList";
-import { getReviewByName } from "../api/Reviews";
+import { getReviewByName } from "../api/reviews";
 
 export const TenantManager = () => {
   const [tenantId, setTenantId] = useState(null);
