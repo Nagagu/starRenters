@@ -174,7 +174,7 @@ export const TenantManager = () => {
             color="secondary"
             sx={{
               marginTop: 2,
-              background: "#e57373",
+              background: "secondary",
               "&:hover": { background: "#f44336" },
             }}
             onClick={() => setCreating(true)}
